@@ -1,3 +1,26 @@
-<header class="header"> 
-  
-</header> 
+<header class="header @@if(this.class){header_@@class}"> 
+	<div class="header__inner container">
+		<a class="header__logo" href="./">
+			<img src="./images/logo.svg" alt="">
+			<img src="./images/logo-mobile.svg" alt="">
+		</a>
+		<div class="header__navi h-navi @@if(this.color){h-navi_@@color}">
+			<button class="h-navi__close"></button>
+			<div class="h-navi__inner">
+				<nav class="h-navi__menu" data-scroll-lock-scrollable>
+					<a class="h-navi__link" href="./about.html">О нас</a>
+					<a class="h-navi__link" href="./">Для гостей Тайланда</a>
+					<a class="h-navi__link" href="./">Для бизнеса</a>
+				</nav>
+				<div class="h-navi__lang">
+					<a class="active" href="./">RU</a>/<a href="./">EN</a>
+				</div>
+				<div class="h-navi__contacts">
+					<a class="h-navi__button h-navi__button_tel" href="./contacts.html"><span>Контакты</span></a>
+					<a class="h-navi__button h-navi__button_tgm" href="./"><span>Задать Вопрос</span></a>
+				</div>
+			</div>
+		</div>
+		<button class="header__navi-toggle"></button>
+	</div>
+</header>

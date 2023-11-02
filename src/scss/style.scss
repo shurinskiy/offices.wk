@@ -2,7 +2,7 @@
 @include reset(); 
 
 // Include breakpoints badge
-body { @include screen-media(); }
+// body { @include screen-media(); }
 
 // Import media-query helper
 @import "../../node_modules/include-media/dist/_include-media.scss";
@@ -21,28 +21,45 @@ $breakpoints: (
 );
 
 
-// @include font-face("Montserrat-ExtraLight", "DM", 100);
-// @include font-face("Montserrat-ExtraBold", "DM", 800);
-// @include font-face("Montserrat-SemiBold", "DM", 600);
-// @include font-face("Montserrat-Regular", "DM", 400);
-// @include font-face("Montserrat-Medium", "DM", 500);
-// @include font-face("Montserrat-Light", "DM", 300);
-// @include font-face("Montserrat-Black", "DM", 900);
-// @include font-face("Montserrat-Bold", "DM", 700);
-// @include font-face("Montserrat-Thin", "DM", 200);
+// @include font-face("MontserratAlternates-ExtraLight", "MA", 100);
+// @include font-face("MontserratAlternates-ExtraBold", "MA", 800);
+@include font-face("MontserratAlternates-SemiBold", "MA", 600);
+@include font-face("MontserratAlternates-Regular", "MA", 400);
+@include font-face("MontserratAlternates-Medium", "MA", 500);
+// @include font-face("MontserratAlternates-Light", "MA", 300);
+// @include font-face("MontserratAlternates-Black", "MA", 900);
+// @include font-face("MontserratAlternates-Bold", "MA", 700);
+// @include font-face("MontserratAlternates-Thin", "MA", 200);
 
-// @import "../../node_modules/swiper/swiper";
+// @include font-face("PhonkSans-ExtraLight", "PS", 100);
+@include font-face("PhonkSans-ExtraBold", "PS", 800);
+@include font-face("PhonkSans-SemiBold", "PS", 600);
+// @include font-face("PhonkSans-Regular", "PS", 400);
+@include font-face("PhonkSans-Medium", "PS", 500);
+@include font-face("PhonkSans-Light", "PS", 300);
+// @include font-face("PhonkSans-Black", "PS", 900);
+// @include font-face("PhonkSans-Bold", "PS", 700);
+// @include font-face("PhonkSans-Thin", "PS", 200);
+
+@import "../../node_modules/swiper/swiper";
 
 // Import BEM blocks scss
 @import "../blocks/**/*.scss";
 
+:root {
+	--text: 35, 43, 91;
+	--accent: 50, 191, 198;
+	--orange: 255, 201, 57;
+}
+
 body, html {
 	box-sizing: border-box;
-	background-color: #fafafa;
+	background-color: #fcfcfc;
+	color: rgb(var(--text));
 	font-size: #{$basesize}px;
-	font-family: sans-serif;
+	font-family: 'MA', sans-serif;
 	line-height: 1.2;
-	font-weight: 400;
+	font-weight: 300;
 	min-height: 100vh;
 	display: flex;
 	flex-flow: column nowrap;
@@ -53,7 +70,36 @@ body, html {
 	margin-top: auto; 
 }
 
-
 p { margin-bottom: 10px; }
 strong { font-weight: bold; }
 em { font-style: italic; }
+
+
+.mb1 { margin-bottom: 100px; }
+.mb2 { margin-bottom: 60px; }
+.mb3 { margin-bottom: 40px; }
+
+			
+@include media('<=sm') {
+	.mb1 { margin-bottom: 60px; }
+	.mb2 { margin-bottom: 40px; }
+	.mb3 { margin-bottom: 30px; }
+}
+
+@include media('<=xxs') {
+	.mb1 { margin-bottom: 40px; }
+	.mb2 { margin-bottom: 30px; }
+	.mb3 { margin-bottom: 20px; }
+}
+
+.top {
+	padding-top: 100px;
+			
+	@include media('<=md') {
+		padding-top: 80px;
+	}
+			
+	@include media('<=xs') {
+		padding-top: 60px;
+	}
+}

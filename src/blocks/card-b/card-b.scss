@@ -1,0 +1,96 @@
+.card-b {
+	$self: &;
+	background-color: #F4F9FB;
+	border-radius: 30px;
+	overflow: hidden;
+	display: flex;
+	flex-flow: column nowrap;
+	@keyframes cardFadeInUp {
+		from { opacity: 0; transform: translateY(100px); }
+		to { opacity: 1; transform: translateY(0)}
+	}
+
+	&[data-animation] {
+		opacity: 0;
+
+		&.showed {
+			animation: cardFadeInUp 0.7s;
+			animation-fill-mode: forwards;
+
+			@for $i from 1 through 15 {
+				&:nth-child(#{$i}) {
+					animation-delay: #{$i * 0.3}s;
+				}
+			}
+		}
+	}
+
+	&__image {
+		display: block;
+		height: 140px;
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__body {
+		box-sizing: border-box;
+		padding: 20px;
+		flex-grow: 1;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	&__title {
+		font-family: "PS", sans-serif;
+		font-weight: 300;
+		margin-bottom: 10px;
+		font-size: 14px;
+		color: rgb(var(--text)); 
+	}
+	
+	&__text {
+		margin-bottom: 14px;
+		font-size: 12px;
+		color: rgb(var(--text));
+	}
+
+	&__button {
+
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: auto;
+
+		&_buttons {
+			padding-top: 18px;
+			padding-bottom: 8px;
+			justify-content: center;
+		}
+	}
+
+	&__b-date {
+		font-family: "PS", sans-serif;
+		font-weight: 300;
+		font-size: 10px;
+		color: #9FA2B1;
+	}
+
+	&__b-price {
+		font-family: "PS", sans-serif;
+		background-color: #fff;
+		border-radius: 10px;
+		color: rgb(var(--accent));
+		line-height: 1.0;
+		padding: 6px 8px;
+		font-weight: 300;
+		font-size: 15px;
+	}
+}

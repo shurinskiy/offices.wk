@@ -1,0 +1,80 @@
+.work {
+	$self: &;
+
+	&__inner {
+
+	}
+
+	&__title {
+
+	}
+	
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 80px 130px;
+		
+		@include media('<=lg') {
+			grid-gap: 80px 60px;
+		}
+		
+		@include media('<=sm') {
+			grid-gap: 80px 40px;
+		}
+		
+		@include media('<=xs') {
+			grid-gap: 80px 30px;
+		}
+		
+		@include media('<=xxs') {
+			grid-template-columns: 1fr;
+			grid-gap: 40px 30px;
+		}
+	}
+	
+	&__item {
+		color: rgb(var(--text));
+		max-width: 490px;
+	}
+
+	&__image {
+		background: linear-gradient(180deg, #F5F9FB 0%, rgb(var(--accent)) 100%);
+		margin-bottom: 20px;
+		border-radius: 50%;
+		height: 100px;
+		width: 100px;
+		
+		&_yellow {
+			background: linear-gradient(180deg, #F5F9FB 0%, rgb(var(--orange)) 100%);
+		}
+
+		img {
+			display: block;
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+
+	&__i-title {
+		font-family: "PS", sans-serif;
+		font-weight: 600;
+		margin-bottom: 20px;
+		
+		@include media('<=xs') {
+			font-size: 14px;
+		}
+		
+		@include media('<=xxs') {
+			font-size: 16px;
+		}
+		
+		@include media('<=xxxs') {
+			font-size: 15px;
+		}
+	}
+	
+	&__text {
+		font-size: 14px;
+		line-height: 1.4;
+	}
+}

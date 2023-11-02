@@ -1,0 +1,117 @@
+.faq {
+	$self: &;
+	@keyframes showItem {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+
+	&_crop {
+		#{$self}__item {
+			animation: showItem 0.4s forwards;
+		}
+	}
+
+	&__inner {
+
+	}
+
+	&__title {
+
+	}
+
+	&__items {
+		counter-reset: faq_ctr;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 40px 25px;
+		
+		@include media('<=xs') {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__item {
+		padding-left: 100px;
+		position: relative;
+		
+		@include media('<=md') {
+			padding-left: 80px;
+		}
+		
+		@include media('<=sm') {
+			padding-left: 60px;
+		}
+		
+		@include media('<=xs') {
+			padding-left: 75px;
+		}
+		
+		@include media('<=xxxs') {
+			padding-left: 52px;
+		}
+
+		&::before {
+			display: block;
+			counter-increment: faq_ctr;
+			content: counter(faq_ctr)".";
+			color: rgb(var(--orange));
+			font-family: "PS", sans-serif;
+			font-weight: 300;
+			font-size: 64px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			
+			@include media('<=md') {
+				font-size: 55px;
+			}
+			
+			@include media('<=sm') {
+				font-size: 40px;
+			}
+			
+			@include media('<=xs') {
+				font-size: 50px;
+			}
+			
+			@include media('<=xxxs') {
+				font-size: 34px;
+			}
+		}
+	}
+
+	&__i-title {
+		font-family: "PS", sans-serif;
+		text-transform: capitalize;
+		line-height: 1.45;
+		margin-bottom: 10px;
+		font-weight: 600;
+		font-size: 18px;
+		color: rgb(var(--text));
+		
+		@include media('<=xxxs') {
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+	}
+	
+	&__i-text {
+		font-size: 14px;
+		font-weight: 500;
+		color: rgb(var(--text));
+		
+		em {
+			font-style: italic;
+			font-weight: 600;
+		}
+	}
+
+	&__more {
+		margin: 60px auto 0;
+
+		&.button {
+			display: block;
+			width: fit-content;
+		}
+	}
+}

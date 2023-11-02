@@ -1,0 +1,33 @@
+.map {
+	$self: &;
+	margin-bottom: 120px;
+	
+	@include media('<=xs') {
+		margin-bottom: 60px;
+	}
+
+	&__inner {
+		box-sizing: border-box;
+		height: 400px;
+		overflow: hidden;
+		border-radius: 80px;
+		backface-visibility: hidden;
+		transform: translate3d(0, 0, 0);
+		max-width: 1200px;
+		width: calc(100% - 40px);
+		margin: 0 auto;
+		background: url('#{$images-path}map-ggl-bg.png') center / cover no-repeat transparent;
+		
+		@include media('<=xs') {
+			border-radius: 50px;
+		}
+		
+		@include media('<=xs') {
+			width: calc(100% - 30px);
+		}
+
+		iframe {
+			border: 0;
+		}
+	}
+}

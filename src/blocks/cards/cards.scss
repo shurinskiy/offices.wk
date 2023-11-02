@@ -1,0 +1,47 @@
+.cards {
+	$self: &;
+
+	&__title {
+
+	}
+
+	&__intro {
+
+	}
+
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 24px;
+		
+		@include media('<=lg') {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		
+		@include media('<=sm') {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		
+		@include media('<=md') {
+			grid-gap: 20px;
+		}
+		
+		@include media('<=xxs') {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__item {
+		grid-column: 1 span;
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__button {
+
+	}
+}

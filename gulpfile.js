@@ -134,9 +134,10 @@ function icons() {
 	.pipe($.svgSymbolView({
 		name: 'icons-sprite',
 		monochrome: {
-			blue: '#638bf5',
-			dark: '#46557b',
-			white: '#ffffff'
+			orange: '#FFC939',
+			accent: '#32BFC6',
+			white: '#ffffff',
+			dark: '#232b5b'
 		}
 	}))
 	.pipe(gulp.dest(pth.pbl.img))
@@ -152,7 +153,7 @@ function fonts() {
 	return gulp.src(pth.src.fnts)
 		.pipe($.newer(pth.pbl.fnts))
 		.pipe($.fonter({
-			formats: ['woff', 'ttf', 'eot'],
+			formats: ['woff', 'ttf'],
 			compound2simple: true
 		}))		
 		.pipe(gulp.dest(pth.pbl.fnts))
