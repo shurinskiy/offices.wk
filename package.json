@@ -60,7 +60,7 @@
 		"from": "src/**/*.html",
 		"to": "src/blocks",
 		"js": "src/js/blocks.js",
-		"omit": "@@,js-,active,opened,swiper,mb,top"
+		"omit": "@@,js-,active,opened,swiper,mb,top,hidden"
 	},
 	"dependencies": {
 		"scroll-lock": "^2.1.5",

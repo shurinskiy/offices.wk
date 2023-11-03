@@ -32,6 +32,21 @@
 		display: flex;
 		flex-flow: column nowrap;
 		height: auto;
+
+		&[data-animation] {
+			opacity: 0;
+	
+			&.showed {
+				animation: cardFadeInUp 0.7s;
+				animation-fill-mode: forwards;
+
+				@for $i from 1 through 15 {
+					&:nth-child(#{$i}) {
+						animation-delay: #{$i * 0.3}s;
+					}
+				}
+			}
+		}
 		
 		@include media('<=xxxs') {
 			padding: 20px 10px;

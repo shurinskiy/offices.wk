@@ -1,0 +1,58 @@
+.about {
+	$self: &;
+
+	&__title {
+
+	}
+	
+	&__subtitle {
+
+	}
+
+	&__inner {
+		column-count: 2;
+		column-gap: 130px;
+		column-width: 440px;
+		
+		@include media('<=lg') {
+			column-gap: 60px;
+		}
+	}
+
+	&__side {
+		
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		font-weight: 500;
+		font-size: 14px;
+	}
+
+	&__button {
+
+	}
+
+	&__map {
+		display: block;
+		overflow: hidden;
+		border-radius: 80px;
+		max-width: fit-content;
+		
+		@include media('<=xs') {
+			border-radius: 50px;
+		}
+		
+		@include media('<=xxs') {
+			border-radius: 30px;
+			height: 180px;
+		}
+
+		img {
+			display: block;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}

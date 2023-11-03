@@ -9,7 +9,7 @@
 
 	}
 
-	&__inner {
+	&__items {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 24px;
@@ -43,5 +43,9 @@
 
 	&__button {
 
+	}
+
+	&__more {
+		margin: 60px auto 0;
 	}
 }

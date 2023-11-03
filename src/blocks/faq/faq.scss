@@ -1,9 +1,5 @@
 .faq {
 	$self: &;
-	@keyframes showItem {
-		from { opacity: 0; }
-		to { opacity: 1; }
-	}
 
 	&_crop {
 		#{$self}__item {

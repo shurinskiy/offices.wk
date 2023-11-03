@@ -5,19 +5,21 @@
 	overflow: hidden;
 	display: flex;
 	flex-flow: column nowrap;
-	@keyframes cardFadeInUp {
-		from { opacity: 0; transform: translateY(100px); }
-		to { opacity: 1; transform: translateY(0)}
+	animation: showItem 0.4s forwards;
+	opacity: 0;
+	
+	&.hidden {
+		display: none;
 	}
-
+	
 	&[data-animation] {
-		opacity: 0;
+		animation: none;
 
 		&.showed {
 			animation: cardFadeInUp 0.7s;
 			animation-fill-mode: forwards;
 
-			@for $i from 1 through 15 {
+			@for $i from 1 through 8 {
 				&:nth-child(#{$i}) {
 					animation-delay: #{$i * 0.3}s;
 				}

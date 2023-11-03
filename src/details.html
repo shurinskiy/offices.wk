@@ -1,0 +1,55 @@
+@@include("_head.html") 
+@@include("_header.html")
+
+<section class="detail top mb1">
+	<div class="detail__inner container">
+		<h1 class="detail__title title mb3">Опен-спейс офис<br> 70 м2 на 2 этаже</h1>
+		<div class="detail__intro title title_subtitle mb2">Только Для Тех У Кого В Была В Прошлом<br> Шенгенская Виза.</div>
+		<div class="detail__content">
+			<div class="detail__image" data-modal>
+				<img src="./images/details-image.png" alt="">
+			</div>
+			<div class="detail__side">
+				<div class="detail__text">
+					<p>Такую визу MTR (METV), может получить каждый турист. Данная виза позволяет многократный въезд в Таиланд с туристическими целями в течение 6 месяцев на 60 дней. Сейчас MTR можно оформить электронно, личное присутствие в посольстве не требуется.</p>
+					<p>Документы:</p>
+					<ul>
+						<li>Визовая анкета</li>
+						<li>Срок действия загранпаспорта не менее 6 месяцев</li>
+						<li>Цветная фотография 4 x 6 см</li>
+						<li>Авиабилеты в Таиланд и обратно</li>
+						<li>Выписка с банковского счета за последние шесть месяцев с остатком не менее 7000$</li>
+						<li>Справка с работы</li>
+					</ul>
+				</div>
+				<div class="detail__price">
+					<span>12000 TBH</span>
+					<span>5 рабочих дней</span>
+				</div>
+				<div class="detail__buttons">
+					<button class="detail__button button button_fill-yellow" data-modal="#request" data-info="@@title">Заказать Услугу</button>
+					<button class="detail__button button button_outline-green button_icon-tgm" data-modal="#request" data-info="@@title">Задать Вопрос</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cards cards_crop mb1">
+	<div class="cards__inner container">
+		<h2 class="cards__title title mb2" data-animation>Смотрите Также:</h2>
+		<div class="cards__items" data-more="Показать еще">
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-1.png', title:'Опен-спейс офис 70м2', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Юнит из 2х офисов по 20 м2', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-1.png', title:'Юнит под магазин на первом этаже ', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Персональное рабочее место', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item hidden', image:'card-image-1.png', title:'Опен-спейс офис 70м2'})
+			@@include("_card-b.html", { cls:'cards__item hidden', image:'card-image-2.png', title:'Юнит из 2х офисов по 20 м2'})
+			@@include("_card-b.html", { cls:'cards__item hidden', image:'card-image-1.png', title:'Юнит под магазин на первом этаже '})
+			@@include("_card-b.html", { cls:'cards__item hidden', image:'card-image-2.png', title:'Персональное рабочее место'})
+		</div>
+	</div>
+</section>
+
+
+@@include("_bottom.html")

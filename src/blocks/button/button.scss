@@ -2,14 +2,13 @@
 	$self: &;
 	@extend %reset-button;
 	box-sizing: border-box;
-	display: block;
 	width: fit-content;
 	font-family: "PS", sans-serif;
 	border-radius: 100px;
 	padding: 12px 40px 11px;
 	font-size: 13px;
 	line-height: 1.0;
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 
 	&::before {

@@ -5,13 +5,30 @@
 <section class="hero">
 	<div class="hero__inner container">
 		<h1 class="hero__title mb3">Бизнес центр в центре Паттайи: коворкинг, кафе и готовые офисы в аренду</h1>
-		<button class="hero__button button button_white" data-modal="video">Узнать подробнее</button>
+		<button class="hero__button button button_white" data-modal="#video">Узнать подробнее</button>
 	</div>
 </section>
 
-<section class="work top mb1">
+<section class="about top mb1">
+	<h2 class="about__title title mb3 container" data-animation>Контакты</h2>
+	<h3 class="about__subtitle title title_subtitle mb3 container">Расположение</h3>
+	<div class="about__inner container">
+		<div class="about__side mb2">
+			<div class="about__text">
+				<p>Мы находимся в центре Паттайи, но работаем по всей территории Королевства Таиланд.</p>
+				<p>Вы можете обратиться к нам он-лайн или приехать в наш офис в Паттайе по адресу:</p>
+			</div>
+			<a class="about__button button button_outline-green button_icon-geo" href="https://maps.app.goo.gl/zBVPZJ49hVPE3U6P6?g_st=ic">352, Phratamnak 3, Pattaya City</a>
+		</div>
+		<a href="./" class="about__map">
+			<img src="./images/about-map-image.png" alt="">
+		</a>
+	</div>
+</section>
+
+<section class="work mb1">
 	<div class="work__inner container">
-		<h2 class="work__title title title_subtitle mb2" data-animation>Инфраструктура</h2>
+		<h2 class="work__title title title_subtitle mb2">Инфраструктура</h2>
 		<div class="work__items">
 			<div class="work__item">
 				<div class="work__image work__image_yellow"><img src="./images/work-image-4.png" alt=""></div>
@@ -49,16 +66,6 @@
 	</div>
 </section>
 
-<div class="cards mb1">
-	<h2 class="cards__intro title title_subtitle mb2 container">Банковские услуги:</h2>
-	<div class="cards__inner container">
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-1.png', title:'Опен-спейс офис 70м2', anim: '0.8' })
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Юнит из 2х офисов по 20 м2', anim: '0.8' })
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-1.png', title:'Юнит под магазин на первом этаже ', anim: '0.8' })
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Персональное рабочее место', anim: '0.8' })
-	</div>
-</div>
-
 <div class="banner mb1">
 	<div class="banner__slider swiper">
 		<div class="swiper-wrapper">
@@ -69,7 +76,7 @@
 					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
-						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Регистрация компании">Заказать Услугу</button>
+						<button class="card-s__button button button_fill-white button_shadow" data-modal="#request" data-info="Регистрация компании">Заказать Услугу</button>
 						<span class="card-s__price">За 30000 TBC</span>
 					</div>
 				</div>
@@ -84,7 +91,7 @@
 					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
-						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Тайские Водительские Права">Заказать Услугу</button>
+						<button class="card-s__button button button_fill-white button_shadow" data-modal="#request" data-info="Тайские Водительские Права">Заказать Услугу</button>
 						<span class="card-s__price">За 12000 TBC</span>
 					</div>
 				</div>
@@ -99,7 +106,7 @@
 					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
-						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Тайские Водительские Права">Заказать Услугу</button>
+						<button class="card-s__button button button_fill-white button_shadow" data-modal="#request" data-info="Тайские Водительские Права">Заказать Услугу</button>
 						<span class="card-s__price">За 12000 TBC</span>
 					</div>
 				</div>
@@ -114,7 +121,7 @@
 					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
-						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Тайские Водительские Права">Заказать Услугу</button>
+						<button class="card-s__button button button_fill-white button_shadow" data-modal="#request" data-info="Тайские Водительские Права">Заказать Услугу</button>
 						<span class="card-s__price">За 12000 TBC</span>
 					</div>
 				</div>
@@ -130,6 +137,122 @@
 		<div class="banner__s-pagn"></div>
 	</div>
 </div>
+
+<section class="stages mb1">
+	<div class="stages__inner container">
+		<h2 class="stages__title title mb2" data-animation>Кафе и Коворкинг-зона</h2>
+		<div class="stages__items stages__items_start">
+			<div class="stages__item">
+				<div class="stages__side">
+					<h3 class="stages__i-title title">Contact Us</h3>
+					<div class="stages__text">
+						<p>You provide us with the project details You complete the brief and give us all the technical data about the project</p>
+						<p>floor plans, sections and elevations in .pdf or, if possible, .dwg 3D model, if you have one materials and colors site plan</p>
+					</div>
+				</div>
+				<div class="stages__image" data-animation="0.8">
+					<img src="./images/stages-image-1.png" alt="">
+				</div>
+			</div>
+			<div class="stages__item">
+				<div class="stages__side">
+					<h3 class="stages__i-title title">Initiate</h3>
+					<div class="stages__text">
+						<p>You provide us with the project details You complete the brief and give us all the technical data about the project</p>
+						<p>floor plans, sections and elevations in .pdf or, if possible, .dwg 3D model, if you have one materials and colors site plan</p>
+					</div>
+				</div>
+				<div class="stages__image" data-animation="0.8">
+					<img src="./images/stages-image-2.png" alt="">
+				</div>
+			</div>
+			<div class="stages__item">
+				<div class="stages__side">
+					<h3 class="stages__i-title title">Preview</h3>
+					<div class="stages__text">
+						<p>You provide us with the project details You complete the brief and give us all the technical data about the project</p>
+						<p>floor plans, sections and elevations in .pdf or, if possible, .dwg 3D model, if you have one materials and colors site plan</p>
+					</div>
+				</div>
+				<div class="stages__image" data-animation="0.8">
+					<img src="./images/stages-image-3.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cards cards_crop mb1">
+	<div class="cards__inner container">
+		<h2 class="cards__title title mb2" data-animation>Забронируйте через<br> сайт со скидкой 7%:</h2>
+		<div class="cards__items" data-more="Показать еще">
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-1.png', title:'Опен-спейс офис 70м2', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Юнит из 2х офисов по 20 м2', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-1.png', title:'Юнит под магазин на первом этаже ', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Персональное рабочее место', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item hidden', image:'card-image-1.png', title:'Опен-спейс офис 70м2'})
+			@@include("_card-b.html", { cls:'cards__item hidden', image:'card-image-2.png', title:'Юнит из 2х офисов по 20 м2'})
+			@@include("_card-b.html", { cls:'cards__item hidden', image:'card-image-1.png', title:'Юнит под магазин на первом этаже '})
+			@@include("_card-b.html", { cls:'cards__item hidden', image:'card-image-2.png', title:'Персональное рабочее место'})
+		</div>
+	</div>
+</section>
+
+<section class="stages mb1">
+	<div class="stages__inner container">
+		<h2 class="stages__title title mb2" data-animation>Кафе и Коворкинг-зона</h2>
+		<div class="stages__items">
+			<div class="stages__item">
+				<div class="stages__side">
+					<h3 class="stages__i-title title">Draft_1</h3>
+					<div class="stages__text">
+						<p>You provide us with the project details You complete the brief and give us all the technical data about the project</p>
+						<p>floor plans, sections and elevations in .pdf or, if possible, .dwg 3D model, if you have one materials and colors site plan</p>
+					</div>
+				</div>
+				<div class="stages__image" data-animation="0.8">
+					<img src="./images/stages-image-4.png" alt="">
+				</div>
+			</div>
+			<div class="stages__item">
+				<div class="stages__side">
+					<h3 class="stages__i-title title">Draft_2</h3>
+					<div class="stages__text">
+						<p>You provide us with the project details You complete the brief and give us all the technical data about the project</p>
+						<p>floor plans, sections and elevations in .pdf or, if possible, .dwg 3D model, if you have one materials and colors site plan</p>
+					</div>
+				</div>
+				<div class="stages__image" data-animation="0.8">
+					<img src="./images/stages-image-5.png" alt="">
+				</div>
+			</div>
+			<div class="stages__item">
+				<div class="stages__side">
+					<h3 class="stages__i-title title">Draft_1</h3>
+					<div class="stages__text">
+						<p>You provide us with the project details You complete the brief and give us all the technical data about the project</p>
+						<p>floor plans, sections and elevations in .pdf or, if possible, .dwg 3D model, if you have one materials and colors site plan</p>
+					</div>
+				</div>
+				<div class="stages__image" data-animation="0.8">
+					<img src="./images/stages-image-6.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cards mb1">
+	<div class="cards__inner container">
+		<h2 class="cards__title title mb2" data-animation>Забронируйте через<br> сайт со скидкой 7%:</h2>
+		<div class="cards__items">
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-1.png', title:'Опен-спейс офис 70м2', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Юнит из 2х офисов по 20 м2', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-1.png', title:'Юнит под магазин на первом этаже ', anim: '0.8' })
+			@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Персональное рабочее место', anim: '0.8' })
+		</div>
+	</div>
+</section>
 
 <section class="faq faq_crop mb1">
 	<div class="faq__inner container">
@@ -203,7 +326,7 @@
 		<h2 class="reviews__title title mb2" data-animation>Отзывы О Нашей Работе</h2>
 		<div class="reviews__slider swiper">
 			<div class="swiper-wrapper">
-				<div class="reviews__slide swiper-slide">
+				<div class="reviews__slide swiper-slide" data-animation="0.8">
 					<div class="reviews__image"><img src="./images/reviews-avatar.png" alt=""></div>
 					<div class="reviews__name">Jon Gunnarsson</div>
 					<div class="reviews__rating rating" data-rate="4.8">
@@ -217,7 +340,7 @@
 					<a class="reviews__more" href="./">see more</a>
 					<div class="reviews__date">2 months ago</div>
 				</div>
-				<div class="reviews__slide swiper-slide">
+				<div class="reviews__slide swiper-slide" data-animation="0.8">
 					<div class="reviews__image"><img src="./images/reviews-avatar.png" alt=""></div>
 					<div class="reviews__name">Jon Gunnarsson</div>
 					<div class="reviews__rating rating" data-rate="3.9">
@@ -231,7 +354,7 @@
 					<a class="reviews__more" href="./">see more</a>
 					<div class="reviews__date">2 months ago</div>
 				</div>
-				<div class="reviews__slide swiper-slide">
+				<div class="reviews__slide swiper-slide" data-animation="0.8">
 					<div class="reviews__image"><img src="./images/reviews-avatar.png" alt=""></div>
 					<div class="reviews__name">Jon Gunnarsson</div>
 					<div class="reviews__rating rating" data-rate="2.7">
@@ -245,7 +368,7 @@
 					<a class="reviews__more" href="./">see more</a>
 					<div class="reviews__date">2 months ago</div>
 				</div>
-				<div class="reviews__slide swiper-slide">
+				<div class="reviews__slide swiper-slide" data-animation="0.8">
 					<div class="reviews__image"><img src="./images/reviews-avatar.png" alt=""></div>
 					<div class="reviews__name">Jon Gunnarsson</div>
 					<div class="reviews__rating rating" data-rate="3.2">
@@ -259,7 +382,7 @@
 					<a class="reviews__more" href="./">see more</a>
 					<div class="reviews__date">2 months ago</div>
 				</div>
-				<div class="reviews__slide swiper-slide">
+				<div class="reviews__slide swiper-slide" data-animation="0.8">
 					<div class="reviews__image"><img src="./images/reviews-avatar.png" alt=""></div>
 					<div class="reviews__name">Jon Gunnarsson</div>
 					<div class="reviews__rating rating" data-rate="2.2">
@@ -343,4 +466,4 @@
 </section>
 
 
-@@include("_bottom.html") 
+@@include("_bottom.html")

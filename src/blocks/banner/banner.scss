@@ -8,9 +8,13 @@
 		margin-left: auto;
 		margin-right: auto;
 		
+		@include media('<=md') {
+			border-radius: 50px;
+		}
+		
 		@include media('<=xs') {
 			width: calc(100% - 30px);
-			border-radius: 50px;
+			border-radius: 40px;
 		}
 	}
 

@@ -4,3 +4,4 @@ import "../blocks/banner/banner.js";
 import "../blocks/rating/rating.js";
 import "../blocks/modal/modal.js";
 import "../blocks/faq/faq.js";
+import "../blocks/cards/cards.js";
