@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+	<link rel="shortcut icon" href="images/favicon.ico"> 
+	<link rel="stylesheet" href="style.css"> 
+	<title></title> 
+</head> 
+<body class=""> 
+ 
+<header class="header "> 
+	<div class="header__inner container">
+		<a class="header__logo" href="./">
+			<img src="./images/logo.svg" alt="">
+			<img src="./images/logo-mobile.svg" alt="">
+		</a>
+		<div class="header__navi h-navi h-navi_orange">
+			<button class="h-navi__close"></button>
+			<div class="h-navi__inner">
+				<nav class="h-navi__menu" data-scroll-lock-scrollable>
+					<a class="h-navi__link" href="./about.html">О нас</a>
+					<a class="h-navi__link" href="./coworking.html">Коворкинг и Кафе</a>
+					<a class="h-navi__link" href="./rent.html">Аренда Офиса</a>
+				</nav>
+				<div class="h-navi__lang">
+					<a class="active" href="./">RU</a>/<a href="./">EN</a>
+				</div>
+				<div class="h-navi__contacts">
+					<a class="h-navi__button h-navi__button_tel" href="./contacts.html"><span>Контакты</span></a>
+					<a class="h-navi__button h-navi__button_tgm" href="./"><span>Задать Вопрос</span></a>
+				</div>
+			</div>
+		</div>
+		<button class="header__navi-toggle"></button>
+	</div>
+</header>
+
+<section class="contact top mb1">
+	<h2 class="contact__title title mb2 container" data-animation>Контакты</h2>
+	<div class="contact__inner container">
+		<div class="contact__side">
+			<div class="contact__text">
+				<p>Мы находимся в центре Паттайи, но работаем по всей территории Королевства Таиланд.</p>
+				<p>Вы можете обратиться к нам он-лайн или приехать в наш офис в Паттайе по адресу:</p>
+			</div>
+			<a class="contact__button button button_outline-green button_icon-geo" href="https://maps.app.goo.gl/zBVPZJ49hVPE3U6P6?g_st=ic">352, Phratamnak 3, Pattaya City</a>
+		</div>
+		<div class="contact__links">
+			<a class="contact__link contact__link_tel" href="tel:+6667889909000">
+				<span>Звоните нам</span>
+				<span>+66 67 88 990 9000</span>
+			</a>
+			<a class="contact__link contact__link_tgm" href="https://t.me/GoldFish_consulting_chat">
+				<span>Пишите в телеграм</span>
+				<span>@theGoldFish</span>
+			</a>
+			<a class="contact__link contact__link_mail" href="mailto:test@gmail.com">
+				<span>Или на почту</span>
+				<span>test@gmail.com</span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="map">
+	<div class="map__inner">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7777.706205639904!2d100.86227972286743!3d12.917161399240456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU0JzU5LjQiTiAxMDDCsDUyJzAwLjEiRQ!5e0!3m2!1sru!2skz!4v1689779648699!5m2!1sru!2skz" width="100%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="footer__top container">
+		<div class="footer__side">
+			<nav class="footer__navi">
+				<a href="./about.html">О нас</a>
+				<a href="./coworking.html">Коворкинг и кафе</a>
+				<a href="./rent.html">Аренда офиса</a>
+			</nav>
+			<a class="footer__logo" href="./">
+				<img src="./images/logo-bottom.svg" alt="">
+			</a>
+		</div>
+		<div class="footer__contacts">
+			<a class="footer__tel" href="tel:+6667889909000">+66 678 8990 9000</a>
+			<a class="footer__map" href="https://maps.app.goo.gl/zBVPZJ49hVPE3U6P6?g_st=ic">Мы на карте</a>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="footer__b-inner container">
+			<span>Copyright &copy;</span>
+		</div>
+	</div>
+</footer>
+
+<div class="modal__hidden">
+	<div id="request">
+		<div class="form">
+			<h2 class="form__title">Оставьте свои контакты<br> и наши менеджеры отправят вам информацию в ближайшее время</h2>
+			<div class="form__body">
+				<label class="form__field form__field_info">
+					<input type="text" name="form_info" placeholder="Информация">
+				</label>
+				<label class="form__field form__field_text">
+					<input type="text" name="form_name" placeholder="Имя">
+				</label>
+				<label class="form__field form__field_region">
+					<input type="text" name="form_region" placeholder="Регион">
+				</label>
+				<label class="form__field form__field_text">
+					<input type="text" name="form_phone" placeholder="Mob/Tlg/Whts">
+				</label>
+				<select name="form_theme" class="form__field form__field_sect">
+					<option value="Водительские права">Водительские права</option>
+					<option value="Регистрация компании">Регистрация компании</option>
+				</select>
+			</div>
+			<div class="form__buttons">
+				<button class="form__button button button_fill-yellow">Отправить</button>
+			</div>
+		</div>
+	</div>
+	<div id="video">
+		<video controls preload="metadata" poster="./images/video-preview.jpg">
+			<!-- <source src="./images/video-small.mp4" type="video/mp4" media="all and (max-width: 480px)"> -->
+			<source src="./images/video.mp4" type="video/mp4">
+		</video>
+	</div>
+</div> 
+
+<script src="common.js"></script> 
+</body> 
+</html>
