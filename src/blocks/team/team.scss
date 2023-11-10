@@ -1,0 +1,75 @@
+.team {
+	$self: &;
+
+	&__inner {
+
+	}
+
+	&__title {
+
+	}
+	
+	&__intro {
+		max-width: 1030px;
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 26px;
+		
+		@include media('<=lg') {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		
+		@include media('<=sm') {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		
+		@include media('<=xxs') {
+			grid-template-columns: 1fr;
+			max-width: 320px;
+			margin: 0 auto;
+		}
+	}
+
+	&__item {
+		grid-column: 1 span;
+		overflow: hidden;
+		position: relative;
+		
+		img {
+			display: block;
+			border-radius: 80px;
+		}
+
+		&:nth-child(even) {
+			img {
+				border-radius: 50%;
+			}
+		}
+	}
+
+	&__name {
+		position: absolute;
+		z-index: 2;
+		bottom: 24px;
+		font-family: "PS", sans-serif;
+		color: #fff;
+
+		span {
+			display: inline-block;
+			background-color: rgb(var(--accent));
+			padding: 5px 10px;
+			border-radius: 10px;
+
+			&:nth-of-type(1) {
+				font-size: 16px;
+			}
+
+			&:nth-of-type(2) {
+				font-size: 12px;
+			}
+		}
+	}
+}

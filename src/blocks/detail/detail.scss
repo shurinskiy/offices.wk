@@ -1,6 +1,19 @@
 .detail {
 	$self: &;
 
+	&_top {
+		background-color: #F8FDFF;
+		padding: 80px 0 100px;
+		
+		@include media('<=sm') {
+			padding: 80px 0 60px;
+		}
+		
+		@include media('<=xxs') {
+			padding: 60px 0 40px;
+		}
+	}
+
 	&__title {
 		max-width: 590px;
 	}
@@ -19,8 +32,9 @@
 	}
 
 	&__gallery {
+		box-sizing: border-box;
 		width: 100%;
-		max-width: 390px;
+		max-width: 480px;
 		min-width: 350px;
 		order: -1;
 		
@@ -53,11 +67,20 @@
 	}
 
 	&__side {
-		padding-left: 26px;
+		padding-left: 70px;
+		width: 100%;
+		
+		@include media('<=lg') {
+			padding-left: 30px;
+		}
 		
 		@include media('<=sm') {
 			padding: 0;
 		}
+	}
+
+	&_s-title {
+
 	}
 
 	&__text {
@@ -89,7 +112,6 @@
 		font-weight: 600;
 		display: flex;
 		align-items: center;
-		margin-bottom: 25px;
 		flex-wrap: wrap;
 		
 		span {
@@ -111,6 +133,7 @@
 	&__buttons {
 		display: flex;
 		flex-wrap: wrap;
+		padding-top: 25px;
 	}
 
 	&__button {

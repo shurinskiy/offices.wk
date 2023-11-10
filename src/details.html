@@ -1,13 +1,17 @@
 @@include("_head.html") 
-@@include("_header.html")
+@@include("_header.html", {"color":"orange"})
 
 <section class="detail top mb1">
 	<div class="detail__inner container">
 		<h1 class="detail__title title mb3">Опен-спейс офис<br> 70 м2 на 2 этаже</h1>
 		<div class="detail__intro title title_subtitle mb2">Только Для Тех У Кого В Была В Прошлом<br> Шенгенская Виза.</div>
 		<div class="detail__content">
-			<div class="detail__image" data-modal>
-				<img src="./images/details-image.png" alt="">
+			<div class="detail__gallery">
+				<video preload="metadata" src="./images/video.mp4" poster="./images/video-preview.jpg">
+				<img src="./images/stages-image-1.png" alt="">
+				<img src="./images/stages-image-2.png" alt="">
+				<img src="./images/stages-image-3.png" alt="">
+				<img src="./images/stages-image-4.png" alt="">
 			</div>
 			<div class="detail__side">
 				<div class="detail__text">
@@ -27,7 +31,7 @@
 					<span>5 рабочих дней</span>
 				</div>
 				<div class="detail__buttons">
-					<button class="detail__button button button_fill-yellow" data-modal="#request" data-info="@@title">Заказать Услугу</button>
+					<button class="detail__button button button_fill-yellow" data-modal="#request" data-info="@@title">Забронировать</button>
 					<button class="detail__button button button_outline-green button_icon-tgm" data-modal="#request" data-info="@@title">Задать Вопрос</button>
 				</div>
 			</div>

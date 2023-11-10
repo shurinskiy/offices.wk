@@ -10,7 +10,17 @@
 	}
 
 	&__items {
+		
+		&_reverse #{$self}__item {
 
+			&:nth-child(even) #{$self}__image {
+				order: 0;
+			}
+
+			&:nth-child(odd) #{$self}__image {
+				order: -1;
+			}
+		}
 	}
 
 	&__item {
