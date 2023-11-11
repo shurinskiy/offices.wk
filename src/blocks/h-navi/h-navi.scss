@@ -58,8 +58,13 @@
 		right: 30px;
 		background: url('#{$images-path}icons-sprite.svg#icon-close-view-white') center / 19px 19px no-repeat rgba(255, 255, 255, 0.1);
 		transition: background-color 0.3s;
-
+		
 		@include media('<=sm') {
+			display: block;
+		}
+		
+		@include media('<=xxs') {
+			right: 15px;
 			display: block;
 		}
 		
@@ -206,7 +211,7 @@
 			transition: border-color 0.3s;
 			
 			&:hover {
-				border-color: rgb(var(--accent));
+				border-color: rgb(var(--orange));
 			}
 		}
 	}

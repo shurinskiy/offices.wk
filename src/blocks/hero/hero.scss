@@ -13,6 +13,11 @@
 	@include media('<=sm') {
 		margin-top: -60px;
 	}
+	
+	@include media('<=xxs') {
+		min-height: auto;
+		height: 100dvh;
+	}
 
 	&__inner {
 		display: flex;
