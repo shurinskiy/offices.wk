@@ -15,7 +15,7 @@
 	}
 
 	&__title {
-		max-width: 590px;
+		max-width: 650px;
 	}
 	
 	&__intro {
@@ -116,15 +116,19 @@
 		
 		span {
 			display: block;
+			box-sizing: border-box;
 			margin-bottom: 15px;
 
 			&:nth-child(1) {
 				font-size: 24px;
-				margin-right: 40px;
+				padding-right: 0px;
+				width: 100%;
+				max-width: 250px;
 			}
 			
 			&:nth-child(2) {
 				font-family: "PS", sans-serif;
+				font-weight: 300;
 				font-size: 16px;				
 			}
 		}

@@ -138,7 +138,7 @@ export const scrollClassToggle = (options = {}) => {
 					timeout = setTimeout(() => {
 						fn.apply(this, args);
 						timeout = null;
-					}, this.throttle)
+					}, this.options.throttle)
 				}
 			}
 		}

@@ -26,8 +26,12 @@ import { selectTweaker } from "../../js/libs/selectTweaker";
 
 	const modal = makeModalFrame({ 
 		select: '[data-modal]', 
-		scrollLock,
+		init: function(underlay) {
+			underlay.setAttribute('data-scroll-lock-scrollable', '');
+		},
 		open: function({ slideshow }, button) {
+			scrollLock.disablePageScroll();
+
 			const active = slideshow ? '.active': '';
 			const info = this.querySelector('.form__field_info input');
 			
@@ -36,8 +40,12 @@ import { selectTweaker } from "../../js/libs/selectTweaker";
 			selectTweaker(this.querySelectorAll('.form__field_sect'));
 			setPlayButton(this, this.querySelector(`video${active}`));
 		},
+		close: function() {
+			scrollLock.enablePageScroll();
+		},
 		move: function() {
 			setPlayButton(this, this.querySelector('video.active'));
 		}
 	});
+	
 })();
